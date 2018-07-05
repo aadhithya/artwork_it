@@ -56,3 +56,18 @@ usage: artwork_it.py [-h] --content-image CONTENT_IMAGE --style-image
                         image size. default=(512,512) if cuda available, else
                         (300,300). type=tuple(int)
 </pre></p>
+<h3>Dependencies</h3>
+<ul>
+	<li>Python 3.x</li>
+	<li>PyTorch</li>
+	<li>numpy</li>
+	<li>pyplot</li>
+	<li>torchvision</li>
+	<li>PIL</li>
+</ul>
+<h3>Coming Soon</h3>
+<ul>
+	<li>Better Documentation!</li>
+	<li>A more modular implementation.</li>
+	<li>A faster implementation and probably the ability to save and reuse a model.</li>
+</ul>
