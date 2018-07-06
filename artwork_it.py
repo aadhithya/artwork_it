@@ -24,7 +24,7 @@ parse.add_argument('--log-every','-le',help='How often should stuff be printed. 
 parse.add_argument('--style-weight','-sw',help='Weight for the style image. Default=1e8 type: float',type=float,required=False)
 parse.add_argument('--content-weight','-cw',help='Weight for the content image. Default=1e-1 type: float',type=float,required=False)
 parse.add_argument('--cnn','-nn',help='What base CNN should be used. Default=vgg11 available: vgg11, vgg13, vgg13_bn,vgg16,vgg16_bn,vgg19. type: str',choices=['vgg11', 'vgg13', 'vgg13_bn','vgg16','vgg16_bn','vgg19'] ,type=str, required=False)
-parse.add_argument('--im-size','-im-size',help='image size. default=(512,512) if cuda available, else (300,300). type=tuple(int)', type=tuple, required=False)
+parse.add_argument('--im-size','-im-size',help='image size. default=(512,512) if cuda available, else (300,300). type=tuple(int)', type=int, nargs=2,required=False)
 
 args = parse.parse_args()
 
