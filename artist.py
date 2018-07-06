@@ -48,7 +48,7 @@ class Artist:
         if params['im_size'] is None:
             self.im_size = (512,512) if self.isCuda else (300,300)
         else:
-            self.im_size = params['im_size']
+            self.im_size = tuple(params['im_size'])
 
         #set of transforms to be applied when loading image
         self.img_loader = transforms.Compose([
